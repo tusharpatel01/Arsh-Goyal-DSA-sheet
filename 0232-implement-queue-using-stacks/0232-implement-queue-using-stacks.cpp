@@ -15,7 +15,7 @@ public:
     int pop() {
         if (stack2.empty()) {
             if (stack1.empty()) {
-                //throw out_of_range("Queue is empty. Cannot pop");
+                throw out_of_range("Queue is empty. Cannot pop");
             }
             while (!stack1.empty()) {
                 stack2.push(stack1.top());
